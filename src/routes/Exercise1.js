@@ -9,23 +9,8 @@ function Exercise1() {
         </p>
       </div>
       <div className="solution-container">
-        <div
-          class="square"
-          style={{
-            width: "200px",
-            height: "200px",
-            backgroundColor: "blueviolet",
-            border: "5px solid grey",
-          }}
-        >
-          <div
-            class="flex-container"
-            style={{
-              textAlign: "center",
-              marginTop: "75px",
-              color: "whitesmoke",
-            }}
-          >
+        <div className="square">
+          <div className="square-flex-container">
             <p className="text-style">Hello World! </p>
           </div>
         </div>

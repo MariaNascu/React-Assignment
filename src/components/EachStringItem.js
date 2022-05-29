@@ -3,12 +3,13 @@ import React from "react";
 export default function EachStringItem(props) {
   const { stringArray } = props;
 
-  const renderList = stringArray.map((item) => <div>{item}</div>);
   return (
     <div>
-      <i>
-        <ul>{renderList}</ul>
-      </i>
+      <ul className="user-list-ex6">
+        {stringArray.map((elementArray) => (
+          <li key={elementArray}>{elementArray}</li>
+        ))}
+      </ul>
     </div>
   );
 }

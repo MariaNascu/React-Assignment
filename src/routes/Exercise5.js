@@ -21,8 +21,6 @@ function Exercise5() {
     "Hannah Reid",
   ];
 
-  const result = stringArrays.map((element) => <ul> {element}</ul>);
-
   return (
     <div>
       <div>
@@ -39,7 +37,13 @@ function Exercise5() {
           Use the map function to render the array in an unordered list.
         </p>
         <div className="solution-container">
-          <div>{result}</div>
+          <div>
+            <ul>
+              {stringArrays.map((stringArray) => (
+                <li key={stringArray}>{stringArray}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

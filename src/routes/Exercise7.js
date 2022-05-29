@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Exercise7() {
   const [inputs, setInputs] = useState({});
@@ -33,7 +33,7 @@ function Exercise7() {
         </p>
         <div className="solution-container">
           <form onSubmit={handleSubmit}>
-            <label>
+            <label className="first-name-label">
               Enter your first name :
               <input
                 type="text"
@@ -42,7 +42,7 @@ function Exercise7() {
                 onBlur={submitName}
               />
             </label>
-            <label>
+            <label className="last-name-labe">
               Enter your last name :
               <input
                 type="text"
@@ -52,7 +52,10 @@ function Exercise7() {
               />
             </label>
           </form>
-          <button onClick={greetMe}> Greet me!</button>
+          <button className="button-style-ex7" onClick={greetMe}>
+            {" "}
+            Greet me!
+          </button>
         </div>
       </div>
     </div>

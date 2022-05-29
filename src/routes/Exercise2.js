@@ -1,5 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click";
-
 function Exercise2() {
   function stringAlert() {
     alert("You clicked me. Thanks!");
@@ -15,13 +13,7 @@ function Exercise2() {
       </div>
       <div className="solution-container">
         <button
-          style={{
-            marginTop: " 5px",
-            backgroundColor: "aqua",
-            width: "70px",
-            height: "50px",
-            borderRadius: "12px",
-          }}
+          className="button-style-ex2"
           id="buttonId"
           onClick={stringAlert}
         >

@@ -13,7 +13,7 @@ export default function EachObject(props) {
   return (
     <div>
       <i>
-        <ul>{renderList}</ul>
+        <ul className="user-list-ex8">{renderList}</ul>
       </i>
     </div>
   );

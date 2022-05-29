@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import { useState } from "react";
 
@@ -15,13 +14,7 @@ function Exercise4() {
         <div className="solution-container">
           <p>You've clicked the button {count} times</p>
           <button
-            style={{
-              marginTop: " 5px",
-              backgroundColor: "pink",
-              width: "70px",
-              height: "50px",
-              borderRadius: "12px",
-            }}
+            className="button-style-ex4"
             id="ex4Button"
             onClick={() => setCount(count + 1)}
           >
